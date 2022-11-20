@@ -6,22 +6,30 @@
 #include <termios.h>
 #include <unistd.h>
 #include <thread>
+#include "termcolor.hpp"
+
+
+#define CONSOLE_GREEN termcolor:: color<0, 154, 0>
+
+
 
 int getrand()
 {
     std::srand(time(NULL));
-    int _max = 3, _min = 1;
+    int _max = 5, _min = 1;
     return _min + rand() % (_max - _min);
 }
 
 void hack_music()
 {
     system("mpg123 -q --loop 1000 /bin/_hackertyper_dir/hacking_music.mp3 ");
+    //system("mpg123 -q --loop 1000 hacking_music.mp3 ");
 }
 
 int main()
 {
     std::ifstream source_file("/bin/_hackertyper_dir/sample.c");
+    //std::ifstream source_file("sample.c");
     std::string cur_string("It's hackin' time");
 
     termios oldt;
@@ -42,7 +50,7 @@ int main()
         }
         int a = getrand();
         for (int i = filled; i < std::min(filled + a, (int)cur_string.size()); ++i) {
-            std::cout << cur_string[i];
+            std::cout << CONSOLE_GREEN << cur_string[i];
         }
         std::cout.flush();
         filled = std::min(filled + a, (int)cur_string.size());
