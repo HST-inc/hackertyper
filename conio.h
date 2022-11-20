@@ -287,17 +287,14 @@ class __CONIO_H{
       }
       
     int cputs(const char*str){
-      printf(str);
+      printf("%s", str);
       return 0;
       }
         
-    char*getpass(const char*prompt){
-      //implementada en unistd.h
-      }
+    char*getpass(const char*prompt);      //implementada en unistd.h
+
       
-    int gettext(int l,int t,int r,int b,void*destination){
-      
-      }
+    int gettext(int l,int t,int r,int b,void*destination);
     
     
   }___CONIO_H;
@@ -319,7 +316,7 @@ class __CONIO_H{
 #define getche          ___CONIO_H.getche
 #define kbhit           ___CONIO_H.kbhit
 #define putch           ___CONIO_H.putch
-#define putchar         ___CONIO_H.putch
+// #define putchar         ___CONIO_H.putchar
 #define cputs           ___CONIO_H.cputs
 #define clreol          ___CONIO_H.clreol
 #define insline         ___CONIO_H.insline
