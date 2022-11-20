@@ -16,7 +16,7 @@
 int getrand()
 {
     std::srand(time(NULL));
-    int _max = 3, _min = 1;
+    int _max = 5, _min = 1;
     return _min + rand() % (_max - _min);
 }
 
