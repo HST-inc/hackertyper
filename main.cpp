@@ -1,17 +1,14 @@
 #include "conio.h"
+#include "termcolor.hpp"
 #include <algorithm>
 #include <fstream>
 #include <iostream>
 #include <string>
 #include <termios.h>
-#include <unistd.h>
 #include <thread>
-#include "termcolor.hpp"
+#include <unistd.h>
 
-
-#define CONSOLE_GREEN termcolor:: color<0, 154, 0>
-
-
+#define CONSOLE_GREEN termcolor::color<0, 154, 0>
 
 int getrand()
 {
@@ -23,13 +20,13 @@ int getrand()
 void hack_music()
 {
     system("mpg123 -q --loop 1000 /bin/_hackertyper_dir/hacking_music.mp3 ");
-    //system("mpg123 -q --loop 1000 hacking_music.mp3 ");
+    // system("mpg123 -q --loop 1000 hacking_music.mp3 ");
 }
 
 int main()
 {
     std::ifstream source_file("/bin/_hackertyper_dir/sample.c");
-    //std::ifstream source_file("sample.c");
+    // std::ifstream source_file("sample.c");
     std::string cur_string("It's hackin' time");
 
     termios oldt;
