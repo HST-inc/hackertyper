@@ -10,7 +10,7 @@
 
 #define CONSOLE_GREEN termcolor::color<0, 154, 0>
 
-#ifdef __unix__
+#if __unix__
 #define PATH_MUSIC "mpg123 -q --loop 1000 /bin/_hackertyper_dir/hacking_music.mp3"
 #define PATH_SAMPLE "/bin/_hackertyper_dir/sample.c"
 #elif __APPLE__
