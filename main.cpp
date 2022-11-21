@@ -11,7 +11,7 @@
 #define CONSOLE_GREEN termcolor::color<0, 154, 0>
 
 #ifdef __linux__
-#define PATH_MUSIC "/bin/_hackertyper_dir/hacking_music.mp3"
+#define PATH_MUSIC "mpg123 -q --loop 1000 /bin/_hackertyper_dir/hacking_music.mp3"
 #define PATH_SAMPLE "/bin/_hackertyper_dir/sample.c"
 #else
 #define PATH_MUSIC "mpg123 -q --loop 1000 /usr/local/bin/_hackertyper_dir/hacking_music.mp3"
