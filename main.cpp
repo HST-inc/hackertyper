@@ -18,7 +18,7 @@
 #define PATH_SAMPLE "/usr/local/bin/_hackertyper_dir/sample.c"
 #elif _WIN32
 #define PATH_MUSIC ""
-#deаine PATH_SAMPLE ""
+#define PATH_SAMPLE ""
 #endif
 
 int getrand()
