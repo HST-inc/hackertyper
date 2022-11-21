@@ -10,6 +10,14 @@
 
 #define CONSOLE_GREEN termcolor::color<0, 154, 0>
 
+#ifdef __linux__
+#define PATH_MUSIC "mpg123 -q --loop 1000 /bin/_hackertyper_dir/hacking_music.mp3"
+#define PATH_SAMPLE "/bin/_hackertyper_dir/sample.c"
+#else
+#define PATH_MUSIC "mpg123 -q --loop 1000 /usr/local/bin/_hackertyper_dir/hacking_music.mp3"
+#define PATH_SAMPLE "/usr/local/bin/_hackertyper_dir/sample.c"
+#endif
+
 int getrand()
 {
     std::srand(time(NULL));
@@ -19,12 +27,14 @@ int getrand()
 
 void hack_music()
 {
-    system("mpg123 -q --loop 1000 /bin/_hackertyper_dir/hacking_music.mp3 ");
+    system(PATH_MUSIC);
 }
+
 
 int main()
 {
-    std::ifstream source_file("/bin/_hackertyper_dir/sample.c");
+    std::cout << "\033c";    
+    std::ifstream source_file(PATH_SAMPLE);
     std::string cur_string("It's hackin' time");
 
     termios oldt;
