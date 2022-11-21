@@ -24,6 +24,7 @@ void hack_music()
 
 int main()
 {
+    std::cout << "\033c";    
     std::ifstream source_file("/bin/_hackertyper_dir/sample.c");
     std::string cur_string("It's hackin' time");
 
