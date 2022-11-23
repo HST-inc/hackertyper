@@ -10,7 +10,7 @@
 
 #define CONSOLE_GREEN termcolor::color<0, 154, 0>
 
-#ifdef __unix__
+#if __unix__
 #define PATH_MUSIC "mpg123 -q --loop 1000 /bin/_hackertyper_dir/hacking_music.mp3"
 #define PATH_SAMPLE "/bin/_hackertyper_dir/sample.c"
 #elif __APPLE__
@@ -21,22 +21,24 @@
 #define PATH_SAMPLE ""
 #endif
 
-int getrand()
+int
+getrand()
 {
     std::srand(time(NULL));
     int _max = 5, _min = 1;
     return _min + rand() % (_max - _min);
 }
 
-void hack_music()
+void
+hack_music()
 {
     system(PATH_MUSIC);
 }
 
-
-int main()
+int
+main()
 {
-    std::cout << "\033c";    
+    std::cout << "\033c";
     std::ifstream source_file(PATH_SAMPLE);
     std::string cur_string("It's hackin' time");
 
@@ -57,11 +59,11 @@ int main()
             filled = 0;
         }
         int a = getrand();
-        for (int i = filled; i < std::min(filled + a, (int)cur_string.size()); ++i) {
+        for (int i = filled; i < std::min(filled + a, (int) cur_string.size()); ++i) {
             std::cout << CONSOLE_GREEN << cur_string[i];
         }
         std::cout.flush();
-        filled = std::min(filled + a, (int)cur_string.size());
+        filled = std::min(filled + a, (int) cur_string.size());
     }
 
     music_thread.join();
