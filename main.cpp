@@ -18,25 +18,22 @@
 #define PATH_SAMPLE "/usr/local/bin/_hackertyper_dir/sample.c"
 #elif _WIN32
 #define PATH_MUSIC ""
-#define PATH_SAMPLE ""
+#define PATH_SAMPLE "C:\Users\%USERNAME%\hackertyper\sample.c"
 #endif
 
-int
-getrand()
+int getrand()
 {
     std::srand(time(NULL));
     int _max = 5, _min = 1;
     return _min + rand() % (_max - _min);
 }
 
-void
-hack_music()
+void hack_music()
 {
     system(PATH_MUSIC);
 }
 
-int
-main()
+int main()
 {
     std::cout << "\033c";
     std::ifstream source_file(PATH_SAMPLE);
