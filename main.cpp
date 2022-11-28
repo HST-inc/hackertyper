@@ -18,7 +18,7 @@
 #define PATH_SAMPLE "/usr/local/bin/_hackertyper_dir/sample.c"
 #elif _WIN32
 #define PATH_MUSIC ""
-#define PATH_SAMPLE ""
+#define PATH_SAMPLE "C:\Users\$USERNAME%\hackertyper\sample.c"
 #endif
 
 int getrand()
