@@ -21,22 +21,19 @@
 #define PATH_SAMPLE ""
 #endif
 
-int
-getrand()
+int getrand()
 {
     std::srand(time(NULL));
     int _max = 5, _min = 1;
     return _min + rand() % (_max - _min);
 }
 
-void
-hack_music()
+void hack_music()
 {
     system(PATH_MUSIC);
 }
 
-int
-main()
+int main()
 {
     std::cout << "\033c";
     std::ifstream source_file(PATH_SAMPLE);
