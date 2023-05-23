@@ -92,6 +92,10 @@ The `sample.c` file contains an example code that can be displayed by the progra
 
 The program was created by the development team at Higher School of Toxity, particularly users [NNakleskin](https://github.com/NNakleskin) and [LumbaBalumba](https://github.com/LumbaBalumba). If you have any questions or suggestions for improving the program, please contact us.
 
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
 ## License
 
 The program is distributed under the MIT license. More information about the license can be found in the `LICENSE` file.
