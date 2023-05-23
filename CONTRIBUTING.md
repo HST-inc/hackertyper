@@ -14,7 +14,7 @@ Before creating a pull request, you should make sure that your changes are consi
 
 - All contributions should be made via pull requests.
 - Pull requests should contain a clear description of the changes being made.
-- Pull requests should be made against the `master` branch.
+- Pull requests should be made against the `main` branch.
 - All changes should be thoroughly tested before submitting a pull request.
 - Pull requests should not introduce new dependencies without prior discussion and agreement from the project maintainers.
 - All contributions should be consistent with the project's guidelines and coding standards.
