@@ -74,7 +74,7 @@ win_setup.bat
 
 The program depends on the `mpg123` utility, which is used to play sound effects. Make sure that the utility is installed on your system before running the program.
 
-##Usage
+## Usage
 
 To run the program, execute the following command:
 
