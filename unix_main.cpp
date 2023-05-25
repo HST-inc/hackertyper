@@ -37,7 +37,7 @@ int main()
 {
     std::cout << "\033c";
     std::ifstream source_file(PATH_SAMPLE);
-    std::string cur_string("It's hackin' time");
+    std::string cur_string = "It's hackin' time";
 
     termios oldt;
     tcgetattr(STDIN_FILENO, &oldt);
