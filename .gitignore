@@ -3,6 +3,7 @@ hackertyper
 .DS_Store
 .idea
 /output
+src/cmake-build-debug
 
 ### C++ ###
 # Prerequisites
