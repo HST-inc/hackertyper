@@ -1,9 +1,13 @@
 hackertyper
+poac-out
 /.vscode
 .DS_Store
 .idea
 /output
 src/cmake-build-debug
+.cache
+compile_commands.json
+target
 
 ### C++ ###
 # Prerequisites
