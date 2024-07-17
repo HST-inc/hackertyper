@@ -8,6 +8,7 @@ src/cmake-build-debug
 .cache
 compile_commands.json
 target
+"*cmake-tools*"
 
 ### C++ ###
 # Prerequisites
