@@ -4,8 +4,6 @@ Hackertyper is a program that displays text on the screen to create the illusion
 
 ## Installation
 
-### Linux
-
 To install on Linux, follow these steps:
 
 1. Clone the repository:
@@ -24,50 +22,6 @@ cd hackertyper
 
 ```
 ./setup.sh
-```
-
-### Mac OS
-
-To install on Mac OS, follow these steps:
-
-1. Clone the repository:
-
-```
-git clone https://github.com/username/hackertyper.git
-```
-
-2. Navigate to the project directory:
-
-```
-cd hackertyper
-```
-
-3. Run the installation script:
-
-```
-./setup_mac.sh
-```
-
-### Windows
-
-To install on Windows, follow these steps:
-
-1. Clone the repository:
-
-```
-git clone https://github.com/username/hackertyper.git
-```
-
-2. Navigate to the project directory:
-
-```
-cd hackertyper
-```
-
-3. Run the installation file:
-
-```
-win_setup.bat
 ```
 
 ## Dependencies
