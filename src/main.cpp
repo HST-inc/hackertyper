@@ -6,8 +6,8 @@
 #include <string>
 #include <thread>
 
-#include "../include/conio.h"
-#include "../include/termcolor.hpp"
+#include "conio.h"
+#include "termcolor.hpp"
 
 #define CONSOLE_GREEN termcolor::color<0, 154, 0>
 
@@ -29,7 +29,7 @@ hack_music()
 }
 
 int
-main()
+main(int argc, char **argv)
 {
     std::print("\033c");
     std::ifstream source_file(PATH_SAMPLE);
@@ -41,7 +41,7 @@ main()
     newt.c_lflag &= ~ECHO;
     tcsetattr(STDIN_FILENO, TCSANOW, &newt);
 
-    std::thread music_thread(hack_music);
+    std::jthread music_thread(hack_music);
 
     size_t filled = 0;
     while (!source_file.eof()) {
@@ -59,8 +59,5 @@ main()
         std::cout.flush();
         filled = std::min(filled + a, cur_string.size());
     }
-
-    music_thread.join();
-
     source_file.close();
 }

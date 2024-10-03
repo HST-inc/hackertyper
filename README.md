@@ -44,7 +44,7 @@ The `sample.c` file contains an example code that can be displayed by the progra
 
 ## Authors
 
-The program was created by the development team at Higher School of Toxity, particularly users [NNakleskin](https://github.com/NNakleskin) and [LumbaBalumba](https://github.com/LumbaBalumba). If you have any questions or suggestions for improving the program, please contact us.
+The program was created by the development team at Higher School of Toxicity, particularly users [NNakleskin](https://github.com/NNakleskin) and [LumbaBalumba](https://github.com/LumbaBalumba). If you have any questions or suggestions for improving the program, please contact us.
 
 ## Contributing
 

@@ -1,3 +1,0 @@
-/home/i3alumba/Projects/hackertyper/bin/CMakeFiles/hackertyper.dir
-/home/i3alumba/Projects/hackertyper/bin/CMakeFiles/edit_cache.dir
-/home/i3alumba/Projects/hackertyper/bin/CMakeFiles/rebuild_cache.dir
