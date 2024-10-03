@@ -29,7 +29,7 @@ hack_music()
 }
 
 int
-main(int argc, char **argv)
+main()
 {
     std::print("\033c");
     std::ifstream source_file(PATH_SAMPLE);
@@ -59,5 +59,7 @@ main(int argc, char **argv)
         std::cout.flush();
         filled = std::min(filled + a, cur_string.size());
     }
+
+
     source_file.close();
 }
