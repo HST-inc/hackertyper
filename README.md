@@ -8,20 +8,23 @@ To install on Linux, follow these steps:
 
 1. Clone the repository:
 
-```
+```bash
 git clone https://github.com/username/hackertyper.git
 ```
 
 2. Navigate to the project directory:
 
-```
+```bash
 cd hackertyper
 ```
 
-3. Run the installation script:
+3. Build and install:
 
-```
-./setup.sh
+```bash
+mkdir build
+cd build
+cmake ..
+sudo make install
 ```
 
 ## Dependencies
@@ -33,7 +36,7 @@ The program depends on the `mpg123` utility, which is used to play sound effects
 To run the program, execute the following command:
 
 ```
-./hackertyper
+hackertyper
 ```
 
 The program will start displaying text on the screen, creating the effect of typing code. You can stop the text output by pressing `Ctrl + C`.
